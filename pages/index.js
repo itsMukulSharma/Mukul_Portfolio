@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div className="relative bg-primary/60 h-full w-full">
-      <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute right-[-25%] mix-blend-color-dodge translate-z-o"></div>
+      <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute right-[-25%] mix-blend-color-dodge animate-pulse duration-75 translate-z-o"></div>
       <div className="w-full h-full absolute right-0 bottom-0">
         <ParticlesContainer />
       </div>
@@ -22,10 +22,10 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br />
+            {/* Transforming Ideas <br /> */}
             <Typewriter
               words={[
-                { text: "Into Digital Reality", styles: [] },
+                // { text: "Into Digital Reality", styles: [] },
                 {
                   text: "Hi, The name's Mukul Sharma",
                   styles: [
@@ -36,6 +36,10 @@ const Home = () => {
                       fontWeight: "bold",
                     },
                   ],
+                },
+                {
+                  text: "Passionate About Building Connections",
+                  styles: [],
                 },
                 {
                   text: "<ButLovesToCodeMore />",
